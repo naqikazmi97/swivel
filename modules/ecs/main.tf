@@ -141,7 +141,7 @@ resource "aws_ecs_task_definition" "this" {
 
   container_definitions = jsonencode([
     {
-      name      = "${local.family}-container"
+      name      = "${local.family}"
       image     = var.image
       essential = true
       portMappings = [{

@@ -43,7 +43,6 @@ variable "ecr" {
 variable "vpc" {
   description = "VPC configurations"
   type = object({
-    name                    = string
     cidr                    = string
     enable_nat_gateway      = bool
     single_nat_gateway      = bool

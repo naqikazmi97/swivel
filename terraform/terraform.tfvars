@@ -18,7 +18,6 @@ ecr = [
 # VPC
 ################################################################################
 vpc = {
-  name                    = "vpc"
   cidr                    = "10.199.0.0/16"
   enable_nat_gateway      = true
   single_nat_gateway      = true

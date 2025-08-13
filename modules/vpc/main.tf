@@ -21,7 +21,7 @@ resource "aws_vpc" "this" {
   enable_network_address_usage_metrics = var.enable_network_address_usage_metrics
 
   tags = merge(
-    { "Name" = var.name },
+    { "Name" = "${var.name}-vpc" },
     var.tags,
     var.vpc_tags,
   )
@@ -350,7 +350,8 @@ resource "aws_nat_gateway" "this" {
   tags = merge(
     {
       "Name" = format(
-        "${var.name}-%s",
+       "%s-nat-%s",
+        var.name,
         element(var.azs, var.single_nat_gateway ? 0 : count.index),
       )
     },

@@ -19,7 +19,7 @@ module "ecr" {
 module "vpc" {
   source = "../modules/vpc"
 
-  name                   = "${local.identifier}-${var.vpc.name}"
+  name                   = "${local.identifier}"
   cidr                   = var.vpc.cidr
   azs                    = local.azs
   enable_nat_gateway     = var.vpc.enable_nat_gateway
