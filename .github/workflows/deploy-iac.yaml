@@ -1,4 +1,4 @@
-name: Reusable Amplify IAC Workflow
+name: Reusable Swivel IAC Workflow
 
 on:
   workflow_call:
