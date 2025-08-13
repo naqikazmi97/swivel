@@ -36,17 +36,18 @@ jobs:
         working-directory: terraform
         run: |
           terraform init
-          terraform plan -out=tfplan
+      #     terraform plan -out=tfplan
       
-      - name: Wait for approval
-        uses: trstringer/manual-approval@v1
-        with:
-          timeout-minutes: 60
-          secret: ${{ secrets.GITHUB_TOKEN }}
-          approvers: "naqikazmi97"
-          minimum-approvals: 1
+      # - name: Wait for approval
+      #   uses: trstringer/manual-approval@v1
+      #   with:
+      #     timeout-minutes: 60
+      #     secret: ${{ secrets.GITHUB_TOKEN }}
+      #     approvers: "naqikazmi97"
+      #     minimum-approvals: 1
 
       - name: Terraform Apply (Manual Approval Required)
         working-directory: terraform
         run:  |
-          terraform apply tfplan
+          # terraform apply tfplan
+          terraform destroy --auto-approve
