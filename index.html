@@ -1,0 +1,62 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SWIVEL • Demo Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, sans-serif;
+        background: #0b1020;
+        color: #e6ecff;
+        -webkit-font-smoothing: antialiased;
+      }
+      .container { width: min(1120px, 92%); margin: 0 auto; }
+      .nav {
+        position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(160%) blur(10px);
+        background: rgba(13,17,34,.85);
+        border-bottom: 1px solid rgba(130,150,255,.08);
+      }
+      .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+      .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .3px; }
+      .logo {
+        width: 36px; height: 36px; border-radius: 10px;
+        background: conic-gradient(from 200deg, #5ad1f6, #7a5cff, #2cf3b5, #5ad1f6);
+      }
+      .nav-links { display: flex; gap: 22px; align-items: center; }
+      .nav a { color: inherit; opacity: .86; font-weight: 500; text-decoration: none; }
+      .pill { padding: 10px 14px; border-radius: 999px; font-weight: 600; background: linear-gradient(135deg, #5ad1f6, #7a5cff); color: white; text-decoration: none; }
+      .hero { padding: 96px 0 70px; text-align: center; }
+      .badge { display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border: 1px solid rgba(90, 209, 246, 0.35); border-radius: 999px; color: #aab3d6; background: rgba(255,255,255,.03); }
+      .h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.07; margin: 18px auto 14px; letter-spacing: -0.02em; }
+      .lead { color: #aab3d6; font-size: clamp(16px, 2.4vw, 18px); width: min(760px, 92%); margin: 0 auto 26px; }
+      .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#" aria-label="SWIVEL home">
+          <span class="logo"></span>
+          <span>SWIVEL <small style="opacity:.7;font-weight:600">by SWBC</small></span>
+        </a>
+        
+      </div>
+    </nav>
+  
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <span class="badge">Demo # 1</span>
+        <h1 class="h1">Hello from ECS (Fargate)</h1>
+              <p class="lead">This demo showcases the use of <b>Terraform</b> for infrastructure as code (IaC) provisioning, <b>ECS</b> for container orchestration, <b>ECR</b> for image storage, and <b>VPC</b> for secure networking — all automated with a <b>GitHub Actions</b> pipeline for seamless CI/CD deployments.</p>
+        
+        
+      </div>
+    </header>
+  
+  
+  </body></html>
+
+  
