@@ -38,7 +38,7 @@ jobs:
         with:
           timeout-minutes: 60
           secret: ${{ secrets.GITHUB_TOKEN }}
-          approvers: "devops-scaleops"
+          approvers: "naqikazmi97"
           minimum-approvals: 1
 
       - name: Terraform Apply (Manual Approval Required)
