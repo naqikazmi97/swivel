@@ -1,0 +1,24 @@
+name: Amplify GenAI Deployment
+run-name: Deploying ${{ inputs.environment }}
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+  issues: write
+
+jobs:
+  iac:
+    uses: ./.github/workflows/deploy-iac.yaml
+    with:
+      environment: ${{ inputs.environment }}
+    secrets: inherit
+  
+  # build:
+  #   needs: [iac]
+  #   uses: ./.github/workflows/build.yaml
+  #   with:
+  #     environment: ${{ inputs.environment }}
+  #   secrets: inherit
