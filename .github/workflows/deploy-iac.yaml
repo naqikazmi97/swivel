@@ -1,7 +1,6 @@
 name: Reusable Swivel IAC Workflow
 
 on:
-  workflow_call:
     
   workflow_dispatch:
 
