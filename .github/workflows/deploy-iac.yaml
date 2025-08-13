@@ -1,4 +1,4 @@
-name: Reusable Swivel IAC Workflow
+name: Swivel IAC Workflow
 
 on:
     
@@ -28,7 +28,7 @@ jobs:
           terraform_version: "1.10.0"
 
       - name: Terrafrom plan
-        working-directory: ${{ inputs.environment }}
+        working-directory: terraform
         run: |
           terraform init
           terraform plan -out=tfplan
