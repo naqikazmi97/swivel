@@ -1,5 +1,4 @@
-name: Amplify GenAI Deployment
-run-name: Deploying ${{ inputs.environment }}
+name: Swivel Deployment
 
 on:
   workflow_dispatch:
